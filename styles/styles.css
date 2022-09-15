@@ -1,7 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: url("/Background-image.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #333;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px #fff;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-ul li {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.nav-ul li:hover {
+  text-decoration: underline;
+}
+
+.nav-ul li a:hover {
+  color: #f2c2ce;
+}
+
+.nav-ul a {
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-ul .btn {
+  background-color: #333;
+  margin-left: 0.5rem;
+  padding: 0 1.3rem;
+  border-radius: 3px;
 }
