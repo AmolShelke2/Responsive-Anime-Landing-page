@@ -76,6 +76,7 @@ a {
   margin-left: 0.5rem;
   padding: 0 1.3rem;
   border-radius: 3px;
+  margin-right: 0.5rem;
 }
 
 /* content section */
@@ -131,4 +132,13 @@ a {
   margin-right: 0.5rem;
 }
 
+/* menu btn  */
+#menu-btn {
+  font-size: 2.2rem;
+  color: #000;
+  cursor: pointer;
+}
+
 /* hamburger menu */
+@media (max-width: 1000px) {
+}
