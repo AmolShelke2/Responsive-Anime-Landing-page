@@ -7,15 +7,19 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("/Background-image.jpg");
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
+  overflow-x: hidden;
   backdrop-filter: blur(4px);
-  overflow: hidden;
 }
 
 header {
@@ -112,6 +116,19 @@ a {
   font-family: "Poppins", sans-serif;
   outline: none;
   border-radius: 3px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.socials a {
+  color: #000;
+  font-size: 2rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 1000px) {
