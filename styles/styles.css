@@ -31,10 +31,6 @@ header {
   margin-bottom: 10rem;
 }
 
-#menu-icon {
-  display: none;
-}
-
 header .logo {
   color: #000;
   text-decoration: none;
@@ -119,7 +115,7 @@ header .navigation a:hover {
 }
 
 .media-icons i {
-  color: gray;
+  color: rgba(114, 223, 255, 0.9);
   font-size: 30px;
   position: relative;
 }
@@ -128,4 +124,75 @@ header .navigation a:hover {
   margin-right: 20px;
 }
 
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
 /* media quiries */
+@media (max-width: 960px) {
+  #menu-icon {
+    display: block;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    z-index: 2;
+    position: fixed;
+    background: rgba(114, 223, 255, 0.9);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transition-property: background;
+  }
+
+  header .navigation.active a {
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 760px) {
+  .content .info h2 {
+    font-size: 40px;
+  }
+
+  .content .info h2 span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content .info h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .content .info h2 span {
+    font-size: 30px;
+  }
+
+  .content .info p {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    margin: 40px 80px;
+  }
+}
