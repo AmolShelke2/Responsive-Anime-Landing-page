@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url("/Background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+#menu-icon {
+  display: none;
+}
+
+header .logo {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .navigation a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .navigation a:hover {
+  background: #fff;
+}
+
+.content {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2 {
+  color: #fff;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span {
+  color: rgba(114, 223, 255, 0.9);
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.content .info p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.content .info-btn {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.content .info-btn:hover {
+  background: rgba(114, 223, 255, 0.9);
+}
